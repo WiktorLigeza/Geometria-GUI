@@ -29,138 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(POINTS));
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBoxX = new System.Windows.Forms.TextBox();
-            this.textBoxY = new System.Windows.Forms.TextBox();
-            this.labelX = new System.Windows.Forms.Label();
-            this.labelY = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBoxElements = new System.Windows.Forms.GroupBox();
-            this.labelNoE = new System.Windows.Forms.Label();
-            this.textBoxElemetns = new System.Windows.Forms.TextBox();
             this.graph = new System.Windows.Forms.Panel();
             this.labelAxis = new System.Windows.Forms.Label();
             this.labelNearest = new System.Windows.Forms.Label();
             this.labelPoint = new System.Windows.Forms.Label();
             this.labelVector = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBoxElements.SuspendLayout();
+            this.menuKDTButton = new System.Windows.Forms.Button();
+            this.SIDE = new System.Windows.Forms.Button();
+            this.zad2 = new System.Windows.Forms.Button();
+            this.refresh = new System.Windows.Forms.Button();
+            this.zad3 = new System.Windows.Forms.Button();
+            this.zad4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(299, 414);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 41);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Proceed";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBoxX
-            // 
-            this.textBoxX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxX.Location = new System.Drawing.Point(26, 32);
-            this.textBoxX.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxX.Name = "textBoxX";
-            this.textBoxX.Size = new System.Drawing.Size(32, 26);
-            this.textBoxX.TabIndex = 1;
-            // 
-            // textBoxY
-            // 
-            this.textBoxY.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxY.Location = new System.Drawing.Point(88, 32);
-            this.textBoxY.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxY.Name = "textBoxY";
-            this.textBoxY.Size = new System.Drawing.Size(32, 26);
-            this.textBoxY.TabIndex = 2;
-            // 
-            // labelX
-            // 
-            this.labelX.AutoSize = true;
-            this.labelX.BackColor = System.Drawing.SystemColors.Desktop;
-            this.labelX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelX.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelX.Location = new System.Drawing.Point(1, 34);
-            this.labelX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelX.Name = "labelX";
-            this.labelX.Size = new System.Drawing.Size(24, 19);
-            this.labelX.TabIndex = 3;
-            this.labelX.Text = "x:";
-            this.labelX.Click += new System.EventHandler(this.labelX_Click);
-            // 
-            // labelY
-            // 
-            this.labelY.AutoSize = true;
-            this.labelY.BackColor = System.Drawing.SystemColors.Desktop;
-            this.labelY.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelY.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelY.Location = new System.Drawing.Point(62, 34);
-            this.labelY.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelY.Name = "labelY";
-            this.labelY.Size = new System.Drawing.Size(24, 19);
-            this.labelY.TabIndex = 4;
-            this.labelY.Text = "y:";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.groupBox1.Controls.Add(this.labelY);
-            this.groupBox1.Controls.Add(this.textBoxX);
-            this.groupBox1.Controls.Add(this.labelX);
-            this.groupBox1.Controls.Add(this.textBoxY);
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.groupBox1.Location = new System.Drawing.Point(147, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(140, 72);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Coordinates";
-            // 
-            // groupBoxElements
-            // 
-            this.groupBoxElements.BackColor = System.Drawing.SystemColors.Desktop;
-            this.groupBoxElements.Controls.Add(this.labelNoE);
-            this.groupBoxElements.Controls.Add(this.textBoxElemetns);
-            this.groupBoxElements.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBoxElements.ForeColor = System.Drawing.SystemColors.Window;
-            this.groupBoxElements.Location = new System.Drawing.Point(291, 11);
-            this.groupBoxElements.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBoxElements.Name = "groupBoxElements";
-            this.groupBoxElements.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBoxElements.Size = new System.Drawing.Size(289, 72);
-            this.groupBoxElements.TabIndex = 6;
-            this.groupBoxElements.TabStop = false;
-            this.groupBoxElements.Text = "Elements";
-            // 
-            // labelNoE
-            // 
-            this.labelNoE.AutoSize = true;
-            this.labelNoE.BackColor = System.Drawing.SystemColors.Desktop;
-            this.labelNoE.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelNoE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelNoE.Location = new System.Drawing.Point(4, 32);
-            this.labelNoE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNoE.Name = "labelNoE";
-            this.labelNoE.Size = new System.Drawing.Size(211, 19);
-            this.labelNoE.TabIndex = 5;
-            this.labelNoE.Text = "Enter number of elements:";
-            // 
-            // textBoxElemetns
-            // 
-            this.textBoxElemetns.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxElemetns.Location = new System.Drawing.Point(219, 29);
-            this.textBoxElemetns.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxElemetns.Name = "textBoxElemetns";
-            this.textBoxElemetns.Size = new System.Drawing.Size(49, 26);
-            this.textBoxElemetns.TabIndex = 2;
             // 
             // graph
             // 
@@ -219,51 +99,136 @@
             this.labelVector.TabIndex = 10;
             this.labelVector.Text = "vector";
             // 
+            // menuKDTButton
+            // 
+            this.menuKDTButton.BackColor = System.Drawing.Color.Black;
+            this.menuKDTButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuKDTButton.BackgroundImage")));
+            this.menuKDTButton.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.menuKDTButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.menuKDTButton.Location = new System.Drawing.Point(603, 7);
+            this.menuKDTButton.Margin = new System.Windows.Forms.Padding(2);
+            this.menuKDTButton.Name = "menuKDTButton";
+            this.menuKDTButton.Size = new System.Drawing.Size(149, 60);
+            this.menuKDTButton.TabIndex = 11;
+            this.menuKDTButton.Text = "THE NEAREST";
+            this.menuKDTButton.UseVisualStyleBackColor = false;
+            this.menuKDTButton.Click += new System.EventHandler(this.menuKDTButton_Click);
+            // 
+            // SIDE
+            // 
+            this.SIDE.BackColor = System.Drawing.Color.Black;
+            this.SIDE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SIDE.BackgroundImage")));
+            this.SIDE.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SIDE.ForeColor = System.Drawing.SystemColors.Window;
+            this.SIDE.Location = new System.Drawing.Point(603, 87);
+            this.SIDE.Margin = new System.Windows.Forms.Padding(2);
+            this.SIDE.Name = "SIDE";
+            this.SIDE.Size = new System.Drawing.Size(149, 60);
+            this.SIDE.TabIndex = 12;
+            this.SIDE.Text = "ZAD 1";
+            this.SIDE.UseVisualStyleBackColor = false;
+            this.SIDE.Click += new System.EventHandler(this.SIDE_Click);
+            // 
+            // zad2
+            // 
+            this.zad2.BackColor = System.Drawing.Color.Black;
+            this.zad2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("zad2.BackgroundImage")));
+            this.zad2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.zad2.ForeColor = System.Drawing.SystemColors.Window;
+            this.zad2.Location = new System.Drawing.Point(603, 168);
+            this.zad2.Margin = new System.Windows.Forms.Padding(2);
+            this.zad2.Name = "zad2";
+            this.zad2.Size = new System.Drawing.Size(149, 60);
+            this.zad2.TabIndex = 13;
+            this.zad2.Text = "ZAD 2";
+            this.zad2.UseVisualStyleBackColor = false;
+            this.zad2.Click += new System.EventHandler(this.zad2_Click);
+            // 
+            // refresh
+            // 
+            this.refresh.BackColor = System.Drawing.Color.Black;
+            this.refresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("refresh.BackgroundImage")));
+            this.refresh.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.refresh.ForeColor = System.Drawing.SystemColors.Window;
+            this.refresh.Location = new System.Drawing.Point(298, 41);
+            this.refresh.Margin = new System.Windows.Forms.Padding(2);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(149, 60);
+            this.refresh.TabIndex = 14;
+            this.refresh.Text = "REFRESH";
+            this.refresh.UseVisualStyleBackColor = false;
+            this.refresh.Click += new System.EventHandler(this.refresh_Click);
+            // 
+            // zad3
+            // 
+            this.zad3.BackColor = System.Drawing.Color.Black;
+            this.zad3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("zad3.BackgroundImage")));
+            this.zad3.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.zad3.ForeColor = System.Drawing.SystemColors.Window;
+            this.zad3.Location = new System.Drawing.Point(603, 250);
+            this.zad3.Margin = new System.Windows.Forms.Padding(2);
+            this.zad3.Name = "zad3";
+            this.zad3.Size = new System.Drawing.Size(149, 60);
+            this.zad3.TabIndex = 15;
+            this.zad3.Text = "ZAD 3";
+            this.zad3.UseVisualStyleBackColor = false;
+            this.zad3.Click += new System.EventHandler(this.zad3_Click);
+            // 
+            // zad4
+            // 
+            this.zad4.BackColor = System.Drawing.Color.Black;
+            this.zad4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("zad4.BackgroundImage")));
+            this.zad4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.zad4.ForeColor = System.Drawing.SystemColors.Window;
+            this.zad4.Location = new System.Drawing.Point(603, 329);
+            this.zad4.Margin = new System.Windows.Forms.Padding(2);
+            this.zad4.Name = "zad4";
+            this.zad4.Size = new System.Drawing.Size(149, 60);
+            this.zad4.TabIndex = 16;
+            this.zad4.Text = "ZAD 4";
+            this.zad4.UseVisualStyleBackColor = false;
+            this.zad4.Click += new System.EventHandler(this.zad4_Click);
+            // 
             // POINTS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(730, 466);
+            this.ClientSize = new System.Drawing.Size(983, 466);
+            this.Controls.Add(this.zad4);
+            this.Controls.Add(this.zad3);
+            this.Controls.Add(this.refresh);
+            this.Controls.Add(this.zad2);
+            this.Controls.Add(this.SIDE);
+            this.Controls.Add(this.menuKDTButton);
             this.Controls.Add(this.labelVector);
             this.Controls.Add(this.labelNearest);
             this.Controls.Add(this.labelAxis);
             this.Controls.Add(this.labelPoint);
             this.Controls.Add(this.graph);
-            this.Controls.Add(this.groupBoxElements);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "POINTS";
             this.Text = "POINTS";
             this.Load += new System.EventHandler(this.POINTS_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.POINTS_MouseMove);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBoxElements.ResumeLayout(false);
-            this.groupBoxElements.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBoxX;
-        private System.Windows.Forms.TextBox textBoxY;
-        private System.Windows.Forms.Label labelX;
-        private System.Windows.Forms.Label labelY;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBoxElements;
-        private System.Windows.Forms.Label labelNoE;
-        private System.Windows.Forms.TextBox textBoxElemetns;
         private System.Windows.Forms.Panel graph;
         private System.Windows.Forms.Label labelAxis;
         private System.Windows.Forms.Label labelNearest;
         private System.Windows.Forms.Label labelPoint;
         private System.Windows.Forms.Label labelVector;
+        private System.Windows.Forms.Button menuKDTButton;
+        private System.Windows.Forms.Button SIDE;
+        private System.Windows.Forms.Button zad2;
+        private System.Windows.Forms.Button refresh;
+        private System.Windows.Forms.Button zad3;
+        private System.Windows.Forms.Button zad4;
     }
 }

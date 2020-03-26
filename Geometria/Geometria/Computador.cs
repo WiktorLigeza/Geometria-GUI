@@ -43,6 +43,21 @@ namespace Geometria
             return line;
         }
 
+        public double side(PointModel point, LineModel line)
+        {
+            ////////////////////////////GATHER DATA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+            double[] coefficient = SLE(line);
+            double A = coefficient[0]; //a
+            int B = -1;
+            double C = coefficient[1]; //b
+
+
+            ////////////////////////////COMPUTE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+            return A * point.x + B * point.y + C;
+
+        }
+
+
         public LineModel rotation(LineModel line,double degree, bool terms)
         {
 
