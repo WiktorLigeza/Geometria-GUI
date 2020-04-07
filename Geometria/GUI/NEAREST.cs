@@ -25,7 +25,8 @@ namespace GUI
         /// <summary>
         /// input data
         /// </summary>
-        int x = 0, y = 0, elements = 0;
+        double x = 0, y = 0;
+        int elements = 0;
 
 
 
@@ -56,9 +57,9 @@ namespace GUI
             else
             {
                 MessageBox.Show("Invalid data set, please try again ;)");
-                
-
-               // refresh form
+                this.DialogResult = DialogResult.None;
+                this.DialogResult = DialogResult.None;
+                // refresh form
                 textBoxX.Text = null;
                 textBoxY.Text = null;
                 textBoxElemetns.Text = null;
@@ -70,11 +71,11 @@ namespace GUI
             bool output = true;
 
 
-            if (!int.TryParse(textBoxX.Text, out x))
+            if (!double.TryParse(textBoxX.Text, out x))
             {
                 output = false;
             }
-            if (!int.TryParse(textBoxY.Text, out y))
+            if (!double.TryParse(textBoxY.Text, out y))
             {
                 output = false;
             }

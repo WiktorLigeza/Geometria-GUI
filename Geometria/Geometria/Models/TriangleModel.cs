@@ -22,5 +22,12 @@ namespace Geometria.Models
             P3 = new PointModel();
         }
 
+        public string Display
+        {
+            get
+            {
+                return $"P1: {P1.x} {P1.y} , P2: {P2.x} {P2.y} , P3: {P3.x} {P3.y}";
+            }
+        }
     }
 }

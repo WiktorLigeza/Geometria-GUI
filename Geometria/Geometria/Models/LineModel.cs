@@ -9,12 +9,12 @@ namespace Geometria.Models
     public class LineModel
     {
         /// <summary>
-        /// Line's A point - PointModel
+        /// Lines A point - PointModel
         /// </summary>
         public PointModel A;
 
         /// <summary>
-        /// Line's B point - PointModel
+        /// Lines B point - PointModel
         /// </summary>
         public PointModel B;
 
@@ -26,6 +26,15 @@ namespace Geometria.Models
         {
             A = new PointModel();
             B = new PointModel();
+        }
+
+
+        public string Display
+        {
+            get
+            {
+                return $"A: {A.x} {A.y} ,B: {B.x} {B.y}";
+            }
         }
     }
 }

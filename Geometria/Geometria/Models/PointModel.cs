@@ -9,13 +9,21 @@ namespace Geometria.Models
     public class PointModel
     {
         /// <summary>
-        /// point's x coordinate
+        /// points x coordinate
         /// </summary>
         public double x;
 
         /// <summary>
-        /// point's y coordinate
+        /// points y coordinate
         /// </summary>
         public double y;
+
+        public string Display
+        {
+            get
+            {
+                return $"x: {x}  , y:{y}";
+            }
+        }
     }
 }

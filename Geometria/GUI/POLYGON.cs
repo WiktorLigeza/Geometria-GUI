@@ -24,17 +24,21 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            elements = int.Parse(textBoxVertices.Text);
-            Random random = new Random();
-            for (int i = 0; i < elements; i++)
+            if(int.TryParse(textBoxVertices.Text,out elements))
             {
-                PointModel p = new PointModel();
+                Random random = new Random();
+                for (int i = 0; i < elements; i++)
+                {
+                    PointModel p = new PointModel();
 
-                p.x = random.Next(-150, 150);
-                p.y = random.Next(-120, 120);
+                    p.x = random.Next(-150, 150);
+                    p.y = random.Next(-120, 120);
 
-                PolygonVertices.Add(p);
+                    PolygonVertices.Add(p);
+                }
             }
+            else this.DialogResult = DialogResult.None;
+
 
         }
 

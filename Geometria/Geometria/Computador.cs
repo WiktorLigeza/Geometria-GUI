@@ -56,20 +56,29 @@ namespace Geometria
             return A * point.x + B * point.y + C;
 
         }
-
-
-        public LineModel rotation(LineModel line,double degree, bool terms)
+        public double sideByPoints(PointModel point, PointModel A, PointModel B)
         {
+            return (A.x - point.x) * (B.y - point.y) - (A.y - point.y) * (B.x - point.x);
+        }
 
+        public LineModel rotation(LineModel input,double degree, bool terms)
+        {
+            LineModel line = new LineModel();
+            line.A.x = input.A.x;
+            line.A.y = input.A.y;
+            line.B.x = input.B.x;
+            line.B.y = input.B.y;
+
+            degree = degree * Math.PI / 180;
             if (terms)
             {
                 line.A.x = (line.A.x) * Math.Cos(degree) - (line.A.y) * Math.Sin(degree);
-                line.A.y = (line.A.y) * Math.Cos(degree) - (line.A.x) * Math.Sin(degree);
+                line.A.y = (line.A.y) * Math.Cos(degree) + (line.A.x) * Math.Sin(degree);
             }
             else
             {
-                line.A.x = (line.B.x) * Math.Cos(degree) - (line.B.y) * Math.Sin(degree);
-                line.A.y = (line.B.y) * Math.Cos(degree) - (line.B.x) * Math.Sin(degree);
+                line.B.x = (line.B.x) * Math.Cos(degree) - (line.B.y) * Math.Sin(degree);
+                line.B.y = (line.B.y) * Math.Cos(degree) + (line.B.x) * Math.Sin(degree);
             }
           
             return line;
